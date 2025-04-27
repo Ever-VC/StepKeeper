@@ -14,10 +14,17 @@ import androidx.room.PrimaryKey;
                         parentColumns = "id",
                         childColumns = "id_categoria",
                         onDelete = ForeignKey.CASCADE
+                ),
+                @ForeignKey(
+                        entity = Marca.class,
+                        parentColumns = "id",
+                        childColumns = "id_marca",
+                        onDelete = ForeignKey.CASCADE
                 )
         },
         indices = {
-                @Index(value = "id_categoria")
+                @Index(value = "id_categoria"),
+                @Index(value = "id_marca")
         }
 )
 public class Producto {
@@ -40,17 +47,21 @@ public class Producto {
     @ColumnInfo(name = "id_categoria")
     private int idCategoria;
 
+    @ColumnInfo(name = "id_marca")
+    private int idMarca;
+
     // Constructor vacío
     public Producto() {
     }
 
     // Por si necesitamos crear objetos de forma rápida
-    public Producto(String nombre, String marca, String talla, double precio, int idCategoria) {
+    public Producto(String nombre, String marca, String talla, double precio, int idCategoria, int idMarca) {
         this.nombre = nombre;
         this.marca = marca;
         this.talla = talla;
         this.precio = precio;
         this.idCategoria = idCategoria;
+        this.idMarca = idMarca;
     }
 
     public int getId() {
@@ -99,5 +110,13 @@ public class Producto {
 
     public void setIdCategoria(int idCategoria) {
         this.idCategoria = idCategoria;
+    }
+
+    public int getIdMarca() {
+        return idMarca;
+    }
+
+    public void setIdMarca(int idMarca) {
+        this.idMarca = idMarca;
     }
 }
