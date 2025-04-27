@@ -5,7 +5,9 @@ import android.content.Context;
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
+import androidx.room.TypeConverters;
 
+import com.evervc.stepkeeper.ci.ConvertidorTipoMovimiento;
 import com.evervc.stepkeeper.dao.CategoriaDao;
 import com.evervc.stepkeeper.dao.ClienteDao;
 import com.evervc.stepkeeper.dao.DetalleVentaDao;
@@ -37,6 +39,7 @@ import com.evervc.stepkeeper.models.Venta;
         version = 1,
         exportSchema = false
 )
+@TypeConverters(ConvertidorTipoMovimiento.class)
 public abstract class ZapateriaDatabase extends RoomDatabase {
 
     // Métodos abstractos para acceder a los DAOs y hacer el CRUD
