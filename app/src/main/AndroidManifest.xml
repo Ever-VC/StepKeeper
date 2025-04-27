@@ -22,6 +22,9 @@
             android:name=".ui.ProductosActivity"
             android:exported="false" />
         <activity
+            android:name=".ui.EmpleadosActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.ClientesActivity"
             android:exported="false" />
         <activity
