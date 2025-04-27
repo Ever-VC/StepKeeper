@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-
+    <item
+        android:id="@+id/btnInventario"
+        android:title="Inventario"
+        android:icon="@drawable/inventario"/>
+    <item
+        android:id="@+id/btnProductos"
+        android:title="Productos"
+        android:icon="@drawable/producto"/>
+    <item
+        android:id="@+id/btnClientes"
+        android:title="Clientes"
+        android:icon="@drawable/cliente"/>
+    <item
+        android:id="@+id/btnEmpleados"
+        android:title="Empleados"
+        android:icon="@drawable/empleado"/>
 </menu>
