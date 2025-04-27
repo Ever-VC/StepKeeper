@@ -99,6 +99,7 @@ public class ClienteFragment extends Fragment {
                 // Muestra el mensaje de que no hay clientes registrados segun sea el caso
                 if (!lstClientes.isEmpty()) {
                     tvMensajeInfo.setVisibility(View.GONE);
+                    System.out.println("La NO lista esta vacia");
                 } else {
                     System.out.println("La lista esta vacia");
                     tvMensajeInfo.setVisibility(View.VISIBLE);

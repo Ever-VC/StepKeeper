@@ -33,7 +33,7 @@ public interface ProductoDao {
     // Obtener Producto con su Categoria
     @Transaction
     @Query("SELECT * FROM productos")
-    List<ProductoPojo> obtenerProductosConCategoria();
+    List<ProductoPojo> obtenerProductosConCategoriaYMarca();
 }
 
 

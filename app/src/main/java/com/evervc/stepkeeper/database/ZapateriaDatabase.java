@@ -13,6 +13,7 @@ import com.evervc.stepkeeper.dao.ClienteDao;
 import com.evervc.stepkeeper.dao.DetalleVentaDao;
 import com.evervc.stepkeeper.dao.EmpleadoDao;
 import com.evervc.stepkeeper.dao.InventarioActualDao;
+import com.evervc.stepkeeper.dao.MarcaDao;
 import com.evervc.stepkeeper.dao.MovimientoInventarioDao;
 import com.evervc.stepkeeper.dao.ProductoDao;
 import com.evervc.stepkeeper.dao.VentaDao;
@@ -38,7 +39,7 @@ import com.evervc.stepkeeper.models.Venta;
                 MovimientoInventario.class,
                 InventarioActual.class
         },
-        version = 1,
+        version = 3,
         exportSchema = false
 )
 @TypeConverters(ConvertidorTipoMovimiento.class)
@@ -46,6 +47,7 @@ public abstract class ZapateriaDatabase extends RoomDatabase {
 
     // Métodos abstractos para acceder a los DAOs y hacer el CRUD
     public abstract CategoriaDao categoriaDao();
+    public abstract MarcaDao marcaDao();
     public abstract ProductoDao productoDao();
     public abstract ClienteDao clienteDao();
     public abstract EmpleadoDao empleadoDao();
