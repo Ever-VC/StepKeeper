@@ -4,6 +4,7 @@ import androidx.room.Embedded;
 import androidx.room.Relation;
 
 import com.evervc.stepkeeper.models.Categoria;
+import com.evervc.stepkeeper.models.Marca;
 import com.evervc.stepkeeper.models.Producto;
 
 public class ProductoPojo {
@@ -15,5 +16,11 @@ public class ProductoPojo {
             entityColumn = "id"
     )
     public Categoria categoria;
+
+    @Relation(
+            parentColumn = "id_marca",
+            entityColumn = "id"
+    )
+    public Marca marca;
 }
 

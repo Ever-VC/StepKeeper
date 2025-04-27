@@ -4,7 +4,7 @@ import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "marca")
+@Entity(tableName = "marcas")
 public class Marca {
     @PrimaryKey(autoGenerate = true)
     private int id;
@@ -33,5 +33,10 @@ public class Marca {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
+    }
+
+    @Override
+    public String toString() {
+        return nombre;
     }
 }

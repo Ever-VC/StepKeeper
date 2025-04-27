@@ -5,15 +5,15 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.ClientesActivity">
+    tools:context=".ui.MarcasActivity">
 
     <TextView
-        android:id="@+id/tvTituloActivityCategorias"
+        android:id="@+id/tvTituloActivityMarcas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="32dp"
-        android:text="AGREGAR NUEVO CLIENTE"
+        android:text="AGREGAR NUEVA MARCA"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,7 +27,7 @@
         android:orientation="vertical"
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTituloActivityCategorias"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloActivityMarcas"
         tools:layout_editor_absoluteX="0dp">
 
         <com.google.android.material.textfield.TextInputLayout
@@ -36,53 +36,24 @@
             android:layout_marginTop="20dp">
             <!-- Title input -->
             <EditText
-                android:id="@+id/etNombreCliente"
+                android:id="@+id/etNombreMarca"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nombre del cliente: *"
+                android:hint="Nombre de la marca: *"
                 android:inputType="textCapWords|text"
                 android:maxLines="1"
                 android:padding="15dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp">
-            <!-- Title input -->
-            <EditText
-                android:id="@+id/etTelefonoCliente"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Telefono: *"
-                android:inputType="phone"
-                android:maxLines="1"
-                android:padding="15dp" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp">
-            <!-- Title input -->
-            <EditText
-                android:id="@+id/etCorreoCliente"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Correo: *"
-                android:inputType="textEmailAddress|text"
-                android:maxLines="1"
-                android:padding="15dp" />
-        </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/btnAgregarCategoria"
+            android:id="@+id/btnAgregarMarca"
             android:layout_marginTop="20dp"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/light_blue"
-            android:onClick="agregarCliente"
+            android:onClick="agregarMarca"
             app:icon="@android:drawable/ic_input_add"
             android:text="Agregar" />
 
@@ -93,11 +64,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@android:color/transparent"
-            android:onClick="cerrarClientesActivity"
+            android:onClick="cerrarMarcasActivity"
             android:textColor="@color/dark_gray"
             android:text="Cancelar" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -35,9 +35,6 @@ public class Producto {
     @ColumnInfo(name = "nombre")
     private String nombre;
 
-    @ColumnInfo(name = "marca")
-    private String marca;
-
     @ColumnInfo(name = "talla")
     private String talla;
 
@@ -55,9 +52,8 @@ public class Producto {
     }
 
     // Por si necesitamos crear objetos de forma rápida
-    public Producto(String nombre, String marca, String talla, double precio, int idCategoria, int idMarca) {
+    public Producto(String nombre, String talla, double precio, int idCategoria, int idMarca) {
         this.nombre = nombre;
-        this.marca = marca;
         this.talla = talla;
         this.precio = precio;
         this.idCategoria = idCategoria;
@@ -78,14 +74,6 @@ public class Producto {
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
-    }
-
-    public String getMarca() {
-        return marca;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
     }
 
     public String getTalla() {

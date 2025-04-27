@@ -45,7 +45,7 @@ public class ClientesActivity extends AppCompatActivity {
         asociarElementosXml();
 
         if (idClienteAEditar != -1) {
-            tvTituloActivityClientes.setText("EDITAR CLIENTE");
+            tvTituloActivityClientes.setText("ACTUALIZAR CLIENTE");
             btnAgregarCliente.setText("Actualizar");
             btnAgregarCliente.setCompoundDrawablesWithIntrinsicBounds(R.drawable.icono_editar, 0, 0 ,0);
 
@@ -65,11 +65,11 @@ public class ClientesActivity extends AppCompatActivity {
     }
 
     private void asociarElementosXml() {
-        tvTituloActivityClientes = findViewById(R.id.tvTituloActivityClientes);
+        tvTituloActivityClientes = findViewById(R.id.tvTituloActivityCategorias);
         etNombreCliente = findViewById(R.id.etNombreCliente);
         etTelefonoCliente = findViewById(R.id.etTelefonoCliente);
         etCorreoCliente = findViewById(R.id.etCorreoCliente);
-        btnAgregarCliente = findViewById(R.id.btnAgregarCliente);
+        btnAgregarCliente = findViewById(R.id.btnAgregarCategoria);
     }
 
     public void agregarCliente(View view) {
