@@ -21,6 +21,7 @@ import com.evervc.stepkeeper.models.Cliente;
 import com.evervc.stepkeeper.models.DetalleVenta;
 import com.evervc.stepkeeper.models.Empleado;
 import com.evervc.stepkeeper.models.InventarioActual;
+import com.evervc.stepkeeper.models.Marca;
 import com.evervc.stepkeeper.models.MovimientoInventario;
 import com.evervc.stepkeeper.models.Producto;
 import com.evervc.stepkeeper.models.Venta;
@@ -28,6 +29,7 @@ import com.evervc.stepkeeper.models.Venta;
 @Database(
         entities = {
                 Categoria.class,
+                Marca.class,
                 Producto.class,
                 Cliente.class,
                 Empleado.class,
