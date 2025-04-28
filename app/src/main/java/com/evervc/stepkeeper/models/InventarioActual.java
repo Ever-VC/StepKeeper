@@ -3,6 +3,7 @@ package com.evervc.stepkeeper.models;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
+import androidx.room.Ignore;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
@@ -32,7 +33,7 @@ public class InventarioActual {
 
     public InventarioActual() {
     }
-
+    @Ignore
     public InventarioActual(int idProducto, int stock, double costoPromedio) {
         this.idProducto = idProducto;
         this.stock = stock;

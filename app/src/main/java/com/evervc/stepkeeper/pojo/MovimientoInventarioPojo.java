@@ -3,6 +3,7 @@ package com.evervc.stepkeeper.pojo;
 import androidx.room.Embedded;
 import androidx.room.Relation;
 
+import com.evervc.stepkeeper.models.InventarioActual;
 import com.evervc.stepkeeper.models.MovimientoInventario;
 import com.evervc.stepkeeper.models.Producto;
 

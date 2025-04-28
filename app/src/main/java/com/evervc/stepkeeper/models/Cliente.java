@@ -2,6 +2,7 @@ package com.evervc.stepkeeper.models;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "clientes")
@@ -19,9 +20,10 @@ public class Cliente {
     @ColumnInfo(name = "correo")
     private String correo;
 
+
     public Cliente() {
     }
-
+    @Ignore
     public Cliente(String nombre, String telefono, String correo) {
         this.nombre = nombre;
         this.telefono = telefono;

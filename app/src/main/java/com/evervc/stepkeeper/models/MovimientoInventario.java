@@ -3,6 +3,7 @@ package com.evervc.stepkeeper.models;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
+import androidx.room.Ignore;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 import androidx.room.TypeConverters;
@@ -44,10 +45,9 @@ public class MovimientoInventario {
 
     @ColumnInfo(name = "id_producto")
     private int idProducto;
-
     public MovimientoInventario() {
     }
-
+    @Ignore
     public MovimientoInventario(TipoMovimiento tipo, int cantidad, double precioUnitario, long fecha, int idProducto) {
         this.tipo = tipo;
         this.cantidad = cantidad;
