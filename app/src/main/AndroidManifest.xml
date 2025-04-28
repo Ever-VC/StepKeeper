@@ -13,6 +13,15 @@
         android:theme="@style/Theme.StepKeeper"
         tools:targetApi="31">
         <activity
+            android:name=".ui.GestionarMarcasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.functions.GestionarMarcasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.GestionarCategoriasActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.MarcasActivity"
             android:exported="false" />
         <activity
