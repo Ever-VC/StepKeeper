@@ -1,6 +1,8 @@
 package com.evervc.stepkeeper.ui;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,5 +31,11 @@ public class GestionarCategoriasActivity extends AppCompatActivity {
                     .replace(R.id.main, new CategoriaFragment())
                     .commit();
         }
+    }
+
+    public void eventoCerrarCategoria(View view) {
+        //Intent cerrarCategoria = new Intent(this, ProductosActivity.class);
+        //startActivity(cerrarCategoria);
+        finish();
     }
 }

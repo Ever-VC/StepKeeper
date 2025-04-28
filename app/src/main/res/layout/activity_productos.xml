@@ -28,7 +28,8 @@
         android:padding="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTituloActivityProductos"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-16dp">
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
@@ -83,13 +84,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:text="Categoría: *"/>
+                android:text="Categoría: *"
+                android:textSize="18dp" />
 
             <Spinner
                 android:id="@+id/spCategoria"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -100,58 +101,58 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="18dp"
-                android:text="Marca: *"/>
+                android:text="Marca: *"
+                android:textSize="18dp" />
 
             <Spinner
                 android:id="@+id/spMarca"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"/>
+                android:layout_height="match_parent" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
             android:id="@+id/btnAgregarProducto"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:backgroundTint="@color/light_blue"
             android:onClick="agregarProducto"
-            app:icon="@android:drawable/ic_input_add"
-            android:text="Guardar Producto" />
+            android:text="Guardar Producto"
+            app:icon="@android:drawable/ic_input_add" />
 
         <Button
             android:id="@+id/btnVerCategorias"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:backgroundTint="@color/dark_green"
             android:onClick="gestionarCategorias"
-            app:icon="@android:drawable/ic_input_get"
-            android:text="Gestionar Categorias" />
+            android:text="Gestionar Categorias"
+            app:icon="@android:drawable/ic_input_get" />
 
         <Button
             android:id="@+id/btnVerMarcas"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:backgroundTint="@color/dark_red"
             android:onClick="gestionarMarcas"
-            app:icon="@android:drawable/ic_menu_sort_by_size"
-            android:text="Gestionar Marcas" />
+            android:text="Gestionar Marcas"
+            app:icon="@android:drawable/ic_menu_sort_by_size" />
 
         <Button
             android:id="@+id/btnCerrarActivityProductos"
-            android:layout_marginTop="20dp"
-            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
             android:backgroundTint="@android:color/transparent"
             android:onClick="cerrarProductosActivity"
-            android:textColor="@color/dark_gray"
-            android:text="Cancelar" />
+            android:text="Cancelar"
+            android:textColor="@color/dark_gray" />
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

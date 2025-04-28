@@ -1,6 +1,7 @@
 package com.evervc.stepkeeper.ui;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -29,5 +30,9 @@ public class GestionarMarcasActivity extends AppCompatActivity {
                     .replace(R.id.main, new MarcaFragment())
                     .commit();
         }
+    }
+
+    public void eventoCerrarMarca(View view) {
+        finish();
     }
 }
