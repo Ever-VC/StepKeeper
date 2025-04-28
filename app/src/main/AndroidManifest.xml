@@ -13,6 +13,30 @@
         android:theme="@style/Theme.StepKeeper"
         tools:targetApi="31">
         <activity
+            android:name=".ui.VentasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.GestionarMarcasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.GestionarCategoriasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MarcasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CategoriasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ProductosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.EmpleadosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ClientesActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
