@@ -3,6 +3,7 @@ package com.evervc.stepkeeper.models;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
+import androidx.room.Ignore;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
@@ -52,6 +53,7 @@ public class Producto {
     }
 
     // Por si necesitamos crear objetos de forma rápida
+    @Ignore
     public Producto(String nombre, String talla, double precio, int idCategoria, int idMarca) {
         this.nombre = nombre;
         this.talla = talla;
@@ -106,5 +108,10 @@ public class Producto {
 
     public void setIdMarca(int idMarca) {
         this.idMarca = idMarca;
+    }
+
+    @Override
+    public String toString() {
+        return nombre;
     }
 }

@@ -3,6 +3,7 @@ package com.evervc.stepkeeper.models;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
+import androidx.room.Ignore;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
@@ -49,7 +50,7 @@ public class DetalleVenta {
 
     public DetalleVenta() {
     }
-
+    @Ignore
     public DetalleVenta(int cantidad, double precioUnitario, double subtotal, int idVenta, int idProducto) {
         this.cantidad = cantidad;
         this.precioUnitario = precioUnitario;

@@ -20,11 +20,8 @@ import android.widget.TextView;
 
 import com.evervc.stepkeeper.R;
 import com.evervc.stepkeeper.database.ZapateriaDatabase;
-import com.evervc.stepkeeper.models.Cliente;
-import com.evervc.stepkeeper.models.Producto;
 import com.evervc.stepkeeper.pojo.ProductoPojo;
 import com.evervc.stepkeeper.ui.ProductosActivity;
-import com.evervc.stepkeeper.ui.adapters.ClienteAdaptador;
 import com.evervc.stepkeeper.ui.adapters.ProductoAdaptador;
 
 import java.util.List;

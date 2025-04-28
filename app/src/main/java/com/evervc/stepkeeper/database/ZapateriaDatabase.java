@@ -39,7 +39,7 @@ import com.evervc.stepkeeper.models.Venta;
                 MovimientoInventario.class,
                 InventarioActual.class
         },
-        version = 3,
+        version = 4,
         exportSchema = false
 )
 @TypeConverters(ConvertidorTipoMovimiento.class)

@@ -2,6 +2,7 @@ package com.evervc.stepkeeper.models;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "categorias")
@@ -18,6 +19,7 @@ public class Categoria {
     }
 
     // Por si necesitamos crear objetos de forma rápida
+    @Ignore
     public Categoria(String nombre) {
         this.nombre = nombre;
     }
