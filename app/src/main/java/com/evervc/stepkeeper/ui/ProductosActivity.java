@@ -254,12 +254,14 @@ public class ProductosActivity extends AppCompatActivity {
     }
 
     public void gestionarCategorias(View view) {
-        Intent gestionCategorias = new Intent(this, CategoriasActivity.class);
+        //Intent gestionCategorias = new Intent(this, CategoriasActivity.class);
+        Intent gestionCategorias = new Intent(this, GestionarCategoriasActivity.class);
         startActivity(gestionCategorias);
     }
 
     public void gestionarMarcas(View view) {
-        Intent gestionMarcas = new Intent(this, MarcasActivity.class);
+        //Intent gestionMarcas = new Intent(this, MarcasActivity.class);
+        Intent gestionMarcas = new Intent(this, GestionarMarcasActivity.class);
         startActivity(gestionMarcas);
     }
 
