@@ -16,9 +16,6 @@
             android:name=".ui.GestionarMarcasActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.functions.GestionarMarcasActivity"
-            android:exported="false" />
-        <activity
             android:name=".ui.GestionarCategoriasActivity"
             android:exported="false" />
         <activity
